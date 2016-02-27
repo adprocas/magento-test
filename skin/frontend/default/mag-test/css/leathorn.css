@@ -1,0 +1,365 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;
+    padding: 0;
+}
+
+.container {
+    min-width: 1171px;
+
+}
+
+
+
+/* Header area */
+.Header_Container {
+  border-width: 3px;
+  border-color: rgb(195, 201, 205);
+  border-style: solid;
+  background-color: rgb(239, 240, 242);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 111px;
+  z-index: 281;
+  padding:0;
+}
+
+
+.Header_Fixed_Container {
+    position: relative;
+
+    top:-3px;
+    padding:0;
+  margin:auto;
+  width: 1171px;
+  height: 100%;
+  z-index: 316;
+  font-size: 0px;
+  
+}
+
+.LogoImg_Container {
+  background-color: rgb(20, 92, 143);
+  margin:0;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 248px;
+  height: 111px;
+  z-index: 313;
+  border-bottom: rgb(18, 80, 125) solid 3px;
+  background-image:url('../images/LeCreusetLogo-WhiteLrg.png');
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.Logo_link {
+display:inline-block;
+}
+
+.Tagline {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 2835px;
+  z-index: 311;
+}
+.Call_Us_Today {
+  font-size: 22.5px;
+  font-family: "Lato";
+  color: rgb(38, 53, 68);
+  text-transform: uppercase;
+  line-height: 0.844;
+  text-align: right;
+  position: absolute;
+  left: 630.78px;
+  top: 56.554px;
+  width: 343px;
+  height: 18px;
+  z-index: 309;
+}
+.We_are_your___ {
+
+}
+.Maple-Leaf {
+  background-image: url('../images/MapleLeaf.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  width:42px;
+  height:50px;
+  display:inline-block;
+  margin-left:33px;
+  margin-right:12px;
+  margin-bottom:28px;
+}
+.Header_Text_Container {
+  display: inline-block;
+  height: 111px;
+  font-size: 0px;
+    vertical-align: top;
+    position: relative;
+}
+
+
+.Header_Call_Text {
+font-size: 22.5px;
+    font-family: "Lato";
+    color: rgb(38, 53, 68);
+    text-transform: uppercase;
+    line-height: 0.844;
+    text-align: left;
+    position: relative;
+    top: 40px;
+    height: 18px;
+    vertical-align: top;
+    z-index: 308;
+    left: 0px;
+    display: block;
+}
+
+.Header_Tagline_Text {
+    font-size: 16px;
+    font-family: "Lato";
+    color: rgb(93, 110, 122);
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.188;
+    text-align: left;
+    position: absolute;
+    bottom: 29px;
+    z-index: 308;
+}
+
+
+.Account-Rectangle {
+    border-width: 1px;
+    border-color: rgb(222, 223, 225);
+    border-style: solid;
+    background-color: rgb(239, 240, 242);
+    position: absolute;
+    right: 0px;
+    top: 29px;
+    width: 334px;
+    height: 51px;
+    z-index: 304;
+    text-align: center;
+}
+
+.Account-Info {
+    font-size: 14px;
+    line-height: 1.056;
+    z-index: 305;
+    display: inline-block;
+    position: relative;
+    bottom: -17px;
+}
+
+.Account-Wish {
+  font-size: 14px;
+  color: rgb(20, 92, 143);
+  line-height: 1.056;
+  z-index: 305;
+  display:inline-block;
+}
+
+.Account-Icon {
+  font-family: "Ionicons";
+  font-size: 18px;
+  display:inline-block;  
+  font-family: "Ionicons";
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+/* End Header area */
+
+/* Navigation area */
+.Navigation_Container {
+  background-color: rgb(38, 53, 68);
+  position: absolute;
+  left: 0px;
+  top: 111px;
+  width: 100%;
+  height: 78px;
+  z-index: 283;
+  padding:0;
+}
+
+.Navigation_Fixed_Container {
+    position: relative;
+    padding:0;
+  margin:auto;
+  width: 1171px;
+  height: 100%;
+  z-index: 316;
+  font-size: 0px;
+}
+
+.Shop_Categories {
+    font-size: 22px;
+    font-family: "Ionicons Medium";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 0.864;
+    text-align: center;
+    /* position: relative; */
+    float: left;
+    display: inline-block;
+    height: 100%;
+    z-index: 300;
+    width: 248px;
+    background-color: rgb(44, 66, 88);
+    text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(161, 174, 183);
+}
+
+a:active {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.Shop_Nav {
+    position: relative;
+    top: 29px;
+    color: rgb(255, 255, 255);
+}
+
+.Shop_Text {
+  font-size: 18px;
+  font-family: "Lato Black";  
+      font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.Brands {
+    font-size: 16px;
+    font-family: "Ionicons";
+    color: rgb(161, 174, 183);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.188;
+    display: inline-block;
+    float: left;
+    margin-top: 30px;
+    margin-left: 34px;
+}
+
+.MenuItem {
+      font-size: 16px;
+    font-family: "Ionicons";
+    color: rgb(161, 174, 183);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.188;
+    display: inline-block;
+    float:left;
+    margin-top: 30px;
+    margin-left: 43px;
+}
+
+.Brands span, .MenuItem span {
+  font-size: 16px;
+  font-family: "Lato";
+}
+
+/* Right hand side */
+.Search_Container {
+  background-color: rgb(20, 92, 143);
+  float:right;
+  width: 80px;
+  height: 78px;
+  z-index: 290;
+}
+
+.Cart_Container {
+  background-color: rgb(228, 190, 75);
+  float:right;
+  width: 78px;
+  height: 78px;
+  z-index: 285;
+}
+
+.Search_Icon, .Cart_Icon {
+  position:relative;
+    font-size: 30px;
+  font-family: "Ionicons";
+  color: rgb(255, 255, 255);
+  line-height: 0.633;
+}
+
+.Search_Icon {
+  top:20px;
+  left:30px;
+}
+
+.Cart_Icon {
+  top:18px;
+  left:27px;
+}
+
+.Search_Text, .Cart_Text {
+    position: relative;
+    font-size: 12px;
+    font-family: "Lato";
+    color: rgb(254, 254, 254);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.583;
+    left: 17px;
+    top: 33px;
+}
+/* End Navigation area */
+
+
+
+.Breatcrumb_Container {
+  background-color: rgb(236, 238, 239);
+  opacity: 0.502;
+  position: absolute;
+  left: 0px;
+  top: 189px;
+  width: 100%;
+  height: 54px;
+  z-index: 278;
+}
+
+.Breadcrumb_Fixed_Container {
+      position: relative;
+    padding:0;
+  margin:auto;
+  width: 1171px;
+  height: 100%;
+  z-index: 316;
+  font-size: 0px;
+}
+
+.Breadcrumb_Text {
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(93, 110, 122);
+    font-weight: bold;
+    line-height: 1.357;
+    text-align: left;
+    bottom: 20px;
+    position: absolute;
+}
+
+.Current_Breadcrum {
+  color: rgb(20, 92, 143);
+}

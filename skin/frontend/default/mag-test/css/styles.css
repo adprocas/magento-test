@@ -571,3 +571,35 @@ font-size: 22.5px;
   text-transform: uppercase;
   line-height: 1.056;
 }
+
+
+/* Product */
+
+.product-view {
+    border-width: 2px;
+  border-color: rgb(222, 223, 225);
+  border-style: solid;
+  margin:55px auto auto auto;
+  left: 374px;
+  top: 298px;
+  width: 1167px;
+  height: 747px;
+  z-index: 173;
+}
+
+.product-img-box {
+  position: relative;
+  margin: 39px 66px 0 18px;
+  width: 497px;
+  height: 648px;
+  z-index: 273;
+  float:left;
+}
+
+.product-shop {
+  position: relative;
+  margin: 39px 55px 0 67px;
+  width: 508px;
+  z-index: 273;
+  float:left;
+}

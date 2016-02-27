@@ -41,9 +41,28 @@
 ?>
 <?php $_menu = $this->renderCategoriesMenuHtml(0,'level-top') ?>
 <?php if($_menu): ?>
-<div class="nav-container">
+		<div class="Navigation_Container">
+			<nav class="Navigation_Fixed_Container">
+				<a href="#" class="Shop_Categories">
+					<span class="Shop_Nav"><span class="Shop_Text">&nbsp;&nbsp;&nbsp;SHOP categorieS</span></span>
+				</a>
+				<a class="Brands"><span>Brands</span>&nbsp;&nbsp;</a>
+				<a class="MenuItem"><span>Sales & Clearance</span>&nbsp;&nbsp;</a>
+				<a class="MenuItem"><span>About Us</span>&nbsp;&nbsp;</a>
+				<a class="MenuItem"><span>Blog</span></a>
+				<div class="Cart_Container">
+					<div class="Cart_Icon"></div>
+					<div class="Cart_Text">Cart  (0)</div>
+				</div>
+				<div class="Search_Container">
+					<div class="Search_Icon"></div>
+					<div class="Search_Text">search</div>
+				</div>
+			</nav>
+		</div>
+<!-- <div class="nav-container">
     <ul id="nav">
         <?php echo $_menu ?>
     </ul>
-</div>
+</div> -->
 <?php endif ?>

@@ -1,0 +1,106 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Top menu for store
+ *
+ * @see Mage_Page_Block_Html_Topmenu
+ */
+?>
+<?php $_menu = $this->getHtml('level-top') ?>
+      <div class="Navigation_Container">
+        <div class="navbar yamm">
+          <div id="navbar-collapse-grid" class="Navigation_Fixed_Container">
+            <ul class="nav">
+              <!-- Grid 12 Menu -->
+              <li class="dropdown yamm-fw Shop_Categories">
+              	<a href="#" data-toggle="dropdown" class="">
+              		<span class="Shop_Nav"><span class="Shop_Text">&nbsp;&nbsp;&nbsp;SHOP categorieS</span></span>
+              	</a>
+                <ul class="dropdown-menu">
+                  <li class="grid-demo">
+                    <div class="col-sm-12">
+                      <div class="col-sm-4">.col-sm-4</div>
+                      <div class="col-sm-4">.col-sm-4</div>
+                      <div class="col-sm-4">.col-sm-4</div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Brands Menu
+              -->
+              <li class="dropdown yamm-fw">
+              	<a href="#" data-toggle="dropdown" class="Brands dropdown-toggle">
+              		<span>Brands</span>&nbsp;&nbsp;
+              	</a>
+              </li>
+              <!-- Sales & Clearance Menu
+              -->
+              <li class="dropdown yamm-fw">
+              	<a href="#" data-toggle="dropdown" class="MenuItem dropdown-toggle">
+              		<span>Sales & Clearance</span>&nbsp;&nbsp;
+				
+              	</a>
+              </li>
+	          <!-- About Us Menu
+              -->
+              <li class="dropdown yamm-fw">
+              	<a href="#" data-toggle="dropdown" class="MenuItem dropdown-toggle">
+              		<span>About Us</span>&nbsp;&nbsp;
+				
+              	</a>
+              </li>
+			  <!-- Blog Menu
+              -->
+              <li class="dropdown yamm-fw">
+              	<a href="#" data-toggle="dropdown" class="MenuItem dropdown-toggle">
+              		<span>Blog</span>
+				
+              	</a>
+              </li>
+            </ul>
+            	<div class="Cart_Container">
+					<div class="Cart_Icon"></div>
+					<div class="Cart_Text">Cart  (0)</div>
+				</div>
+				<div class="Search_Container">
+					<div class="Search_Icon"></div>
+					<div class="Search_Text">search</div>
+				</div>
+          </div>
+        </div>
+      </div>
+
+
+
+<?php if($_menu): ?>
+<div class="nav-container">
+    <ul id="nav">
+        <?php echo $_menu ?>
+    </ul>
+</div>
+<?php endif ?>

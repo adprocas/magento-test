@@ -18,7 +18,10 @@
             <type>skin_js</type>
             <script>js/bootstrap.min.js</script>
         </action>
-
+        <action method="addItem">
+            <type>skin_js</type>
+            <script>js/mag-test.js</script>
+        </action>
     </reference>
     </default>
 </layout>

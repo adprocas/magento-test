@@ -38,29 +38,60 @@
             <ul class="nav">
               <!-- Grid 12 Menu -->
               <li class="dropdown yamm-fw Shop_Categories">
-              	<a href="#" data-toggle="dropdown" class="">
+              	<a href="#" id="Shop_Dropdown">
               		<span class="Shop_Nav"><span class="Shop_Text">&nbsp;&nbsp;&nbsp;SHOP categorieS</span></span>
               	</a>
                 <ul class="dropdown-menu">
-                  <li class="grid-demo">
-                    <div class="col-sm-12">
-                      <div class="col-sm-4">.col-sm-4</div>
-                      <div class="col-sm-4">.col-sm-4</div>
-                      <div class="col-sm-4">.col-sm-4</div>
+                  <li class="grid-dropdown">
+                    <div class="Dropdown-Column-one">
+                      <ul>
+						<?php if($_menu): ?>
+						        <?php echo $_menu ?>
+						<?php endif ?>
+                      	<div class="clearfix"></div>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="Dropdown-Column-two">
+                      <ul>
+                      	<li class="Category_Name">
+                      		  
+                      	</li>
+                      	<div class="clearfix"></div>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="Dropdown-Column-three">
+                      <ul>
+                      	<li>
+                      		
+                      	</li>
+                      	<div class="clearfix"></div>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="Dropdown-Column-four">
+                      <ul>
+                      	<li>
+                      		
+                      	</li>
+                      	<div class="clearfix"></div>
+                      </ul>
+                      <div class="clearfix"></div>
                     </div>
                   </li>
                 </ul>
               </li>
               <!-- Brands Menu
               -->
-              <li class="dropdown yamm-fw">
+              <li class="dropdown yamm-fw Regular_Menu">
               	<a href="#" data-toggle="dropdown" class="Brands dropdown-toggle">
               		<span>Brands</span>&nbsp;&nbsp;
               	</a>
               </li>
               <!-- Sales & Clearance Menu
               -->
-              <li class="dropdown yamm-fw">
+              <li class="dropdown yamm-fw Regular_Menu">
               	<a href="#" data-toggle="dropdown" class="MenuItem dropdown-toggle">
               		<span>Sales & Clearance</span>&nbsp;&nbsp;
 				
@@ -68,7 +99,7 @@
               </li>
 	          <!-- About Us Menu
               -->
-              <li class="dropdown yamm-fw">
+              <li class="dropdown yamm-fw Regular_Menu">
               	<a href="#" data-toggle="dropdown" class="MenuItem dropdown-toggle">
               		<span>About Us</span>&nbsp;&nbsp;
 				
@@ -76,7 +107,7 @@
               </li>
 			  <!-- Blog Menu
               -->
-              <li class="dropdown yamm-fw">
+              <li class="dropdown yamm-fw Regular_Menu">
               	<a href="#" data-toggle="dropdown" class="MenuItem dropdown-toggle">
               		<span>Blog</span>
 				
@@ -94,13 +125,3 @@
           </div>
         </div>
       </div>
-
-
-
-<?php if($_menu): ?>
-<div class="nav-container">
-    <ul id="nav">
-        <?php echo $_menu ?>
-    </ul>
-</div>
-<?php endif ?>

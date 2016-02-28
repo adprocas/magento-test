@@ -548,8 +548,22 @@ body{
 }
 
 .product-img-box {
+  border-width: 1px;
+  border-color: rgb(222, 223, 225);
+  border-style: solid;
   position: relative;
-  margin: 39px 66px 0 18px;
+  left: 37px;
+  top: 39px;
+  width: 496px;
+  height: 496px;
+  z-index: 264;
+  display:table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.product-img-container {
+  position: relative;
   width: 497px;
   height: 648px;
   z-index: 273;
@@ -563,4 +577,14 @@ body{
   z-index: 273;
   float:left;
 }
+
+.free-gift {
+  width: 207px;
+  height: 76px;
+  position: absolute;
+  top:30px;
+  left:-19px;
+  background-image: url('../images/FreeGift-Tag.png');
+}
+
 /* End Product View */

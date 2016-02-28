@@ -46,8 +46,11 @@
             <input type="hidden" name="related_product" id="related-products-field" value="" />
         </div>
 
-        <div class="product-img-box">
-            <?php echo $this->getChildHtml('media') ?>
+        <div class="product-img-container">
+            <div class="product-img-box">
+                <div class="free-gift"></div>
+                <img src="<?php echo Mage::getModel('catalog/product_media_config')->getMediaUrl($_product->getImage()); ?>">
+            </div>
         </div>
 
         <div class="product-shop">

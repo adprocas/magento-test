@@ -32,18 +32,18 @@
  */
 ?>
 <?php $_menu = $this->getHtml('level-top') ?>
-      <div class="Navigation_Container">
+      <div class="main-navigation-container">
         <div class="navbar yamm">
-          <div id="navbar-collapse-grid" class="Navigation_Fixed_Container">
+          <div id="navbar-collapse-grid" class="fixed-navigation-container">
             <ul class="nav">
               <!-- Grid 12 Menu -->
-              <li class="dropdown yamm-fw Shop_Categories">
-              	<a href="#" id="Shop_Dropdown">
-              		<span class="Shop_Nav"><span class="Shop_Text">&nbsp;&nbsp;&nbsp;SHOP categorieS</span></span>
+              <li class="dropdown yamm-fw categories-menu">
+              	<a href="#" id="category-dropdown">
+              		<span class="category-nav-icon"><span class="category-menu-text">&nbsp;&nbsp;&nbsp;SHOP categorieS</span></span>
               	</a>
                 <ul class="dropdown-menu">
                   <li class="grid-dropdown">
-                    <div class="Dropdown-Column-one">
+                    <div class="dropdown-column-one">
                       <ul>
 						<?php if($_menu): ?>
 						        <?php echo $_menu ?>
@@ -52,16 +52,16 @@
                       </ul>
                       <div class="clearfix"></div>
                     </div>
-                    <div class="Dropdown-Column-two">
+                    <div class="dropdown-column-two">
                       <ul>
-                      	<li class="Category_Name">
+                      	<li class="category-name">
                       		  
                       	</li>
                       	<div class="clearfix"></div>
                       </ul>
                       <div class="clearfix"></div>
                     </div>
-                    <div class="Dropdown-Column-three">
+                    <div class="dropdown-column-three">
                       <ul>
                       	<li>
                       		
@@ -70,7 +70,7 @@
                       </ul>
                       <div class="clearfix"></div>
                     </div>
-                    <div class="Dropdown-Column-four">
+                    <div class="dropdown-column-four">
                       <ul>
                       	<li>
                       		
@@ -84,43 +84,43 @@
               </li>
               <!-- Brands Menu
               -->
-              <li class="dropdown yamm-fw Regular_Menu">
-              	<a href="#" data-toggle="dropdown" class="Brands dropdown-toggle">
+              <li class="dropdown yamm-fw regular-menu">
+              	<a href="#" data-toggle="dropdown" class="brands-item dropdown-toggle">
               		<span>Brands</span>&nbsp;&nbsp;
               	</a>
               </li>
               <!-- Sales & Clearance Menu
               -->
-              <li class="dropdown yamm-fw Regular_Menu">
-              	<a href="#" data-toggle="dropdown" class="MenuItem dropdown-toggle">
+              <li class="dropdown yamm-fw regular-menu">
+              	<a href="#" data-toggle="dropdown" class="menu-item dropdown-toggle">
               		<span>Sales & Clearance</span>&nbsp;&nbsp;
 				
               	</a>
               </li>
 	          <!-- About Us Menu
               -->
-              <li class="dropdown yamm-fw Regular_Menu">
-              	<a href="#" data-toggle="dropdown" class="MenuItem dropdown-toggle">
+              <li class="dropdown yamm-fw regular-menu">
+              	<a href="#" data-toggle="dropdown" class="menu-item dropdown-toggle">
               		<span>About Us</span>&nbsp;&nbsp;
 				
               	</a>
               </li>
 			  <!-- Blog Menu
               -->
-              <li class="dropdown yamm-fw Regular_Menu">
-              	<a href="#" data-toggle="dropdown" class="MenuItem dropdown-toggle">
+              <li class="dropdown yamm-fw regular-menu">
+              	<a href="#" data-toggle="dropdown" class="menu-item dropdown-toggle">
               		<span>Blog</span>
 				
               	</a>
               </li>
             </ul>
-            	<div class="Cart_Container">
-					<div class="Cart_Icon"></div>
-					<div class="Cart_Text">Cart  (0)</div>
+            	<div class="cart-container">
+					<div class="cart-icon"></div>
+					<div class="cart-text">Cart  (0)</div>
 				</div>
-				<div class="Search_Container">
-					<div class="Search_Icon"></div>
-					<div class="Search_Text">search</div>
+				<div class="search-container">
+					<div class="search-icon"></div>
+					<div class="search-text">search</div>
 				</div>
           </div>
         </div>

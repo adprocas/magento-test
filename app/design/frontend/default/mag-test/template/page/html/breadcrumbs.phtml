@@ -28,10 +28,10 @@
 
 
 
-<div class="Breatcrumb_Container">
-    <ul class="Breadcrumb_Fixed_Container">
+<div class="main-breadcrumb-container">
+    <ul class="fixed-breadcrumb-container">
         <?php foreach($crumbs as $_crumbName=>$_crumbInfo): ?>
-            <li class="<?php echo $_crumbName ?> Breadcrumb_Text">
+            <li class="<?php echo $_crumbName ?> breadcrumb-text">
             <?php if($_crumbInfo['link']): ?>
                 <a href="<?php echo $_crumbInfo['link'] ?>" title="<?php echo $this->escapeHtml($_crumbInfo['title']) ?>"><?php echo $this->escapeHtml($_crumbInfo['label']) ?></a>
             <?php elseif($_crumbInfo['last']): ?>

@@ -6,15 +6,8 @@ body{
     padding: 0;
 }
 
-.container {
-    min-width: 1171px;
-
-}
-
-
-
-/* Header area */
-.Header_Container {
+/* Begin Header area */
+.main-header-container {
   border-top:3px rgb(195, 201, 205) solid;
   border-bottom:3px rgb(195, 201, 205) solid;
   background-color: rgb(239, 240, 242);
@@ -26,21 +19,22 @@ body{
   padding:0;
 }
 
-
-.Header_Fixed_Container {
+.fixed-header-container {
     position: relative;
-
     top:-3px;
     padding:0;
   margin:auto;
   width: 1171px;
   height: 100%;
   z-index: 316;
-  font-size: 0px;
-  
+  font-size: 0px; 
 }
 
-.LogoImg_Container {
+.logo-link {
+  display:inline-block;
+}
+
+.logo-img {
   background-color: rgb(20, 92, 143);
   margin:0;
   position: relative;
@@ -55,36 +49,7 @@ body{
   background-position: center; 
 }
 
-.Logo_link {
-display:inline-block;
-}
-
-.Tagline {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1920px;
-  height: 2835px;
-  z-index: 311;
-}
-.Call_Us_Today {
-  font-size: 22.5px;
-  font-family: "Lato";
-  color: rgb(38, 53, 68);
-  text-transform: uppercase;
-  line-height: 0.844;
-  text-align: right;
-  position: absolute;
-  left: 630.78px;
-  top: 56.554px;
-  width: 343px;
-  height: 18px;
-  z-index: 309;
-}
-.We_are_your___ {
-
-}
-.Maple-Leaf {
+.maple-leaf-img {
   background-image: url('../images/MapleLeaf.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -95,7 +60,8 @@ display:inline-block;
   margin-right:12px;
   margin-bottom:28px;
 }
-.Header_Text_Container {
+
+.tagline-container {
   display: inline-block;
   height: 111px;
   font-size: 0px;
@@ -103,9 +69,8 @@ display:inline-block;
     position: relative;
 }
 
-
-.Header_Call_Text {
-font-size: 22.5px;
+.tagline-call {
+  font-size: 22.5px;
     font-family: "Lato";
     color: rgb(38, 53, 68);
     text-transform: uppercase;
@@ -120,7 +85,7 @@ font-size: 22.5px;
     display: block;
 }
 
-.Header_Tagline_Text {
+.tagline-text {
     font-size: 16px;
     font-family: "Lato";
     color: rgb(93, 110, 122);
@@ -133,8 +98,7 @@ font-size: 22.5px;
     z-index: 308;
 }
 
-
-.Account-Rectangle {
+.account-container {
     border-width: 1px;
     border-color: rgb(222, 223, 225);
     border-style: solid;
@@ -148,7 +112,7 @@ font-size: 22.5px;
     text-align: center;
 }
 
-.Account-Info {
+.account-info-container {
     font-size: 14px;
     line-height: 1.056;
     z-index: 305;
@@ -157,7 +121,7 @@ font-size: 22.5px;
     bottom: -17px;
 }
 
-.Account-Wish {
+.wishlist-container {
   font-size: 14px;
   color: rgb(20, 92, 143);
   line-height: 1.056;
@@ -165,7 +129,7 @@ font-size: 22.5px;
   display:inline-block;
 }
 
-.Account-Icon {
+.account-icon {
   font-family: "Ionicons";
   font-size: 18px;
   display:inline-block;  
@@ -176,8 +140,10 @@ font-size: 22.5px;
 }
 /* End Header area */
 
-/* Navigation area */
-.Navigation_Container {
+
+
+/* Begin Navigation area */
+.main-navigation-container {
   background-color: rgb(38, 53, 68);
   left: 0px;
   top: 111px;
@@ -187,7 +153,7 @@ font-size: 22.5px;
   padding:0;
 }
 
-.Navigation_Fixed_Container {
+.fixed-navigation-container {
     position: relative;
     padding:0;
   margin:auto;
@@ -197,22 +163,25 @@ font-size: 22.5px;
   font-size: 0px;
 }
 
-.Shop_Categories a {
+.nav {
+  float: left !important;
+}
+
+      /*Categories Menu*/
+.categories-menu a {
   height:100%;
   color: rgb(161, 174, 183);
     background: transparent !important;
   background-color: transparent !important;
 }
 
-
-.Shop_Categories {
+.categories-menu {
     font-size: 22px;
     font-family: "Ionicons Medium";
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 0.864;
     text-align: center;
-    /* position: relative; */
     float: left;
     display: inline-block;
     height: 100%;
@@ -222,74 +191,63 @@ font-size: 22.5px;
     text-decoration: none;
 }
 
-.Regular_Menu a:hover {
+.categories-menu a:hover {
   color: rgb(255, 255, 255) !important;
   text-decoration: none;
   background: transparent !important;
   background-color: transparent !important;
 }
 
-.Regular_Menu a:visited, .Regular_Menu a:focus {
+.categories-menu a:visited, .regular-menu a:focus {
     text-decoration: none;
     color: rgb(161, 174, 183);
     background: transparent !important;
   background-color: transparent !important;
 }
 
-.Regular_Menu a:active {
+.categories-menu a:active {
     text-decoration: none;
     color: rgb(255, 255, 255);
     background: transparent !important;
   background-color: transparent !important;
 }
 
-.open a {
-  color: rgb(255, 255, 255) !important;
-  text-decoration: none;
-  background: transparent !important;
-  background-color: transparent !important;
-}
-
-.Shop_Categories a:hover {
-  color: rgb(255, 255, 255) !important;
-  text-decoration: none;
-  background: transparent !important;
-  background-color: transparent !important;
-}
-
-.Shop_Categories a:visited, .Regular_Menu a:focus {
-    text-decoration: none;
-    color: rgb(161, 174, 183);
-    background: transparent !important;
-  background-color: transparent !important;
-}
-
-.Shop_Categories a:active {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    background: transparent !important;
-  background-color: transparent !important;
-}
-
-.nav {
-  float: left !important;
-}
-
-.Shop_Nav {
+.category-nav-icon {
     position: relative;
     top: 29px;
     color: rgb(255, 255, 255);
 }
 
-.Shop_Text {
+.category-menu-text {
   font-size: 18px;
   font-family: "Lato Black";  
       font-weight: bold;
     text-transform: uppercase;
-    
+}
+      /*End Categories Menu*/
+      /*Regular Menu*/
+.regular-menu a:hover {
+  color: rgb(255, 255, 255) !important;
+  text-decoration: none;
+  background: transparent !important;
+  background-color: transparent !important;
 }
 
-.Brands {
+.regular-menu a:visited, .regular-menu a:focus {
+    text-decoration: none;
+    color: rgb(161, 174, 183);
+    background: transparent !important;
+  background-color: transparent !important;
+}
+
+.regular-menu a:active {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: transparent !important;
+  background-color: transparent !important;
+}
+    /*brands has slightly different margins*/
+.brands-item {
     font-size: 16px;
     font-family: "Ionicons";
     color: rgb(161, 174, 183);
@@ -302,7 +260,7 @@ font-size: 22.5px;
     margin-left: 34px;
 }
 
-.MenuItem {
+.menu-item {
       font-size: 16px;
     font-family: "Ionicons";
     color: rgb(161, 174, 183);
@@ -315,13 +273,13 @@ font-size: 22.5px;
     margin-left: 43px;
 }
 
-.Brands span, .MenuItem span {
+.brands-item span, .menu-item span {
   font-size: 16px;
   font-family: "Lato";
 }
-
-/* Right hand side */
-.Search_Container {
+      /*End Regular Menu*/
+      /* Right hand menu */
+.search-container {
   background-color: rgb(20, 92, 143);
   float:right;
   width: 80px;
@@ -329,7 +287,7 @@ font-size: 22.5px;
   z-index: 290;
 }
 
-.Cart_Container {
+.cart-container {
   background-color: rgb(228, 190, 75);
   float:right;
   width: 78px;
@@ -337,7 +295,7 @@ font-size: 22.5px;
   z-index: 285;
 }
 
-.Search_Icon, .Cart_Icon {
+.search-icon, .cart-icon {
   position:relative;
     font-size: 30px;
   font-family: "Ionicons";
@@ -345,17 +303,17 @@ font-size: 22.5px;
   line-height: 0.633;
 }
 
-.Search_Icon {
+.search-icon {
   top:20px;
   left:30px;
 }
 
-.Cart_Icon {
+.cart-icon {
   top:18px;
   left:27px;
 }
 
-.Search_Text, .Cart_Text {
+.search-text, .cart-text {
     position: relative;
     font-size: 12px;
     font-family: "Lato";
@@ -366,15 +324,27 @@ font-size: 22.5px;
     left: 17px;
     top: 33px;
 }
+      /* End Right hand menu */
+      /*override bootstrap changing backgrounds*/
+.open a {
+  color: rgb(255, 255, 255) !important;
+  text-decoration: none;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+/* End Navigation */
+
 /* End Navigation area */
 
 
-.Breatcrumb_Container li {
+/* Begin Breadcrum area */
+
+.main-breadcrumb-container li {
   float:left;
   list-style: none;
 }
 
-.Breatcrumb_Container {
+.main-breadcrumb-container {
   background-color: rgb(236, 238, 239);
   opacity: 0.502;
   left: 0px;
@@ -383,7 +353,7 @@ font-size: 22.5px;
   z-index: 278;
 }
 
-.Breadcrumb_Fixed_Container {
+.fixed-breadcrumb-container {
       position: relative;
     padding:0;
   margin:auto;
@@ -393,7 +363,7 @@ font-size: 22.5px;
   font-size: 0px;
 }
 
-.Breadcrumb_Text {
+.breadcrumb-text {
     font-size: 14px;
     font-family: "Lato";
     color: rgb(20, 92, 143);
@@ -402,17 +372,12 @@ font-size: 22.5px;
     text-align: left;
     margin:22px 8px 0px 0px;
 }
-.Breadcrumb_Text a {
+.breadcrumb-text a {
   margin-right: 6px;
       font-size: 14px;
     font-family: "Lato";
     color: rgb(93, 110, 122);
 }
-
-.Current_Breadcrum {
-  color: rgb(20, 92, 143);
-}
-
 
 
 /*!
@@ -442,6 +407,11 @@ font-size: 22.5px;
   right: 0;
 }
 
+
+/*//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+///////////// DROPDOWN MENU ////////////////////////////
+*/
 /*!
  * Yamm!3
  * Yet another megamenu for Bootstrap
@@ -449,24 +419,15 @@ font-size: 22.5px;
  *
  * Demo styles
  */
-
-/* layout */
-
-
 /* menu styes */
 .list-unstyled,
 .list-unstyled ul { min-width: 120px }
-
 @media ( min-width: 767px ) {
   .panel-group { width: 400px; }
   .thumbnail { margin: 0; }
 }
-
-/* Grid demo styles */
-
-  /* Navbar fixes */
-
-  .navbar {
+/* Navbar fixes */
+.navbar {
      margin-bottom: 0px !important; 
      border: none !important; 
      border-radius: 0px !important;
@@ -492,31 +453,31 @@ font-size: 22.5px;
      box-shadow: none !important;
 }
 
-.grid-dropdown [class*="Dropdown-Column-"] {
+.grid-dropdown [class*="dropdown-column-"] {
   float:left;
   height: 782px;
 }
 
-.Dropdown-Column-one {
+.dropdown-column-one {
     
     width: 248px;
     padding: 0;
     background-color: rgb(38, 53, 68);
 }
 
-.Dropdown-Column-two {
+.dropdown-column-two {
     width:304px;
     padding: 34px 0px 30px 33px;
     background-color: rgb(255, 255, 255);
 }
 
-.Dropdown-Column-three {
+.dropdown-column-three {
     width:304px;
     padding: 34px 0px 30px 33px;
     background-color: rgb(255, 255, 255);
 }
 
-.Dropdown-Column-four {
+.dropdown-column-four {
     width: 314px;
     float:right;
     padding: 0;
@@ -524,19 +485,19 @@ font-size: 22.5px;
     background-color: rgb(255, 255, 255);
 }
 
-.grid-dropdown [class*="Dropdown-Column-"] ul {
+.grid-dropdown [class*="dropdown-column-"] ul {
   list-style-type: none;
   text-align: left;
   padding:21px 0 20px 0;
 }
 
-.Dropdown-Column-one li {
+.dropdown-column-one li {
   height: 44px;
   width: 248px;
   padding-left:0;
 }
 
-.Dropdown-Column-one li a {
+.dropdown-column-one li a {
   color: rgb(161, 174, 183) !important;
   text-transform: uppercase;
   padding-left: 30px !important;
@@ -548,13 +509,13 @@ font-size: 22.5px;
   line-height: 3.143;
 }
 
-.Dropdown-Column-one li:hover, .Dropdown-Column-one li:hover a {
+.dropdown-column-one li:hover, .dropdown-column-one li:hover a {
       background-color: rgb(44, 66, 88);
       color: rgb(254, 254, 254) !important;
       cursor: pointer;
 }
 
-.Dropdown-Column-one .active {
+.dropdown-column-one .active {
       background-color: rgb(44, 66, 88);
       color: rgb(254, 254, 254) !important;
 }
@@ -571,10 +532,9 @@ font-size: 22.5px;
   text-transform: uppercase;
   line-height: 1.056;
 }
+/*//////////////////////////// END DROPDOWN */
 
-
-/* Product */
-
+/* Begin Product View */
 .product-view {
     border-width: 2px;
   border-color: rgb(222, 223, 225);
@@ -603,3 +563,4 @@ font-size: 22.5px;
   z-index: 273;
   float:left;
 }
+/* End Product View */

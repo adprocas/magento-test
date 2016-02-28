@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$('#Shop_Dropdown').on('click', function (event) {
+	$('#category-dropdown').on('click', function (event) {
 	    $(this).parent().toggleClass('open');
 	});
 
@@ -14,8 +14,8 @@ $(document).ready(function () {
 
 	$('.Dropdown-Column-one li').on('click', function(event) {
 		event.preventDefault();
-		$('.Category_Name').html($(this).find('a').html());
-		$('.Dropdown-Column-one li').removeClass('active');
+		$('.category-name').html($(this).find('a').html());
+		$('.dropdown-column-one li').removeClass('active');
 		$(this).addClass('active');
 	});
 });

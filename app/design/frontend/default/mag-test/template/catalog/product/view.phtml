@@ -48,8 +48,8 @@
 
         <div class="product-img-container">
             <div class="product-img-box">
-                <div class="free-gift"></div>
-                <img src="<?php echo Mage::getModel('catalog/product_media_config')->getMediaUrl($_product->getImage()); ?>">
+                <img src="<?php echo Mage::getDesign()->getSkinUrl(); ?>/images/FreeGift-Tag.png" class="free-gift" alt="Free Gift With This Product - Today Only"></img>
+                <img src="<?php echo Mage::getModel('catalog/product_media_config')->getMediaUrl($_product->getImage()); ?>" alt="<?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?>">
             </div>
         </div>
 

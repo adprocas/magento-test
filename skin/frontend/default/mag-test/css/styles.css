@@ -34,8 +34,8 @@ body{
   display:inline-block;
 }
 
-.logo-img {
-  background-color: rgb(20, 92, 143);
+.logo-link {
+    background-color: rgb(20, 92, 143);
   margin:0;
   position: relative;
   left: 0px;
@@ -44,21 +44,16 @@ body{
   height: 111px;
   z-index: 313;
   border-bottom: rgb(18, 80, 125) solid 3px;
-  background-image:url('../images/LeCreusetLogo-WhiteLrg.png');
-  background-repeat: no-repeat;
-  background-position: center; 
+    text-align: center;
+    padding-top: 37px;
 }
 
 .maple-leaf-img {
-  background-image: url('../images/MapleLeaf.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  width:42px;
-  height:50px;
-  display:inline-block;
-  margin-left:33px;
-  margin-right:12px;
-  margin-bottom:28px;
+    display: inline-block;
+    margin-left: 33px;
+    margin-right: 12px;
+    margin-bottom: 28px;
+    vertical-align: bottom;
 }
 
 .tagline-container {
@@ -563,19 +558,19 @@ body{
 }
 
 .product-img-container {
-  position: relative;
-  width: 497px;
-  height: 648px;
-  z-index: 273;
-  float:left;
-}
+    position: relative;
+    width: 534px;
+    height: 648px;
+    z-index: 273;
+    float: left;
+  }
 
 .product-shop {
-  position: relative;
-  margin: 39px 55px 0 67px;
-  width: 508px;
-  z-index: 273;
-  float:left;
+    position: relative;
+    margin: 39px 55px 0 67px;
+    width: 507px;
+    z-index: 273;
+    float: left;
 }
 
 .free-gift {
@@ -584,7 +579,14 @@ body{
   position: absolute;
   top:30px;
   left:-19px;
-  background-image: url('../images/FreeGift-Tag.png');
+}
+
+.product-name h1 {
+    font-size: 24px;
+  font-family: "Merriweather";
+  color: rgb(38, 53, 68);
+  font-weight: bold;
+  line-height: 1.5;
 }
 
 /* End Product View */

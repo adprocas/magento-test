@@ -59,13 +59,24 @@
             </div>
             
             <div class="product-tags">
-                <div class="tag-container instock-tag-container"><span class="tag-icon"></span> IN STOCK</div>
-                <div class="tag-container limitedlifetime-tag-container"><span class="tag-icon"></span> limited lifetime</div>
-                <div class="tag-container freeshipping-tag-container"><span class="tag-icon"></span> free shipping</div>
-                <div class="tag-container currency-tag-container"><span class="dollar-tag-icon">$</span>CAD</div>
+                <?php if($_product->isSaleable()): ?>
+                        <div class="tag-container"><img src="<?php echo Mage::getDesign()->getSkinUrl(); ?>images\InStock-Tag.jpg" alt="In Stock"></div>
+                    <?php if ($_product->getAttributeText('limited_lifetime') == "Yes"): ?>
+                        <div class="tag-container"><img src="<?php echo Mage::getDesign()->getSkinUrl(); ?>images\LimitedLifetime-Tag.jpg" alt="Limited Lifetime"></div>
+                    <?php endif; ?>
+                    <?php if ($_product->getAttributeText('free_shipping') == "Yes"): ?>
+                        <div class="tag-container"><img src="<?php echo Mage::getDesign()->getSkinUrl(); ?>images\FreeShipping-Tag.jpg" alt="Free Shipping"></div>
+                    <?php endif; ?>
+                    <?php if ($_product->getAttributeText('canadian_dollars') == "Yes"): ?>
+                        <div class="last-tag-container"><img src="<?php echo Mage::getDesign()->getSkinUrl(); ?>images\CAD-Tag.jpg" alt="Canada"></div>
+                    <?php endif; ?>
+
+                <?php else: ?>
+                    <div class="tag-container outofstock-tag-container"><span class="tag-icon">&#xf2d7;</span>&nbsp;&nbsp;out of stock</div>
+                <?php endif; ?>
                 <div class="clearfix"></div>
             </div>
-            <div class="rating-sku">
+            <div class="info-open-box">
                 <span class="filled-stars"></span><span class="unfilled-stars"></span>&nbsp;&nbsp;&nbsp;2 Review(s)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="add-review-icon"></span> Add Review&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;SKU: LEC-LS25013459
             </div>
             <?php if ($_product->getShortDescription()):?>
@@ -74,7 +85,7 @@
                     <div class="std"><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
                 </div>
             <?php endif;?>
-
+            
 
             <?php $_msrpPrice = Mage::getModel('directory/currency')->formatTxt($_product->getMsrp(), array('display' => Zend_Currency::NO_SYMBOL)); ?>
             <?php $_price = Mage::getModel('directory/currency')->formatTxt($_product->getPrice(), array('display' => Zend_Currency::NO_SYMBOL)); ?>
@@ -115,41 +126,19 @@
                     
                 </div>
                 <div class="clearfix"></div>
-            <?php echo $this->getReviewsSummaryHtml($_product, false, true)?>
-            <?php echo $this->getChildHtml('alert_urls') ?>
-            <?php echo $this->getChildHtml('product_type_data') ?>
-            <?php echo $this->getTierPriceHtml() ?>
-            <?php echo $this->getChildHtml('extrahint') ?>
-
-            <?php if (!$this->hasOptions()):?>
-                <div class="add-to-box">
-                    <?php if($_product->isSaleable()): ?>
-                        <?php echo $this->getChildHtml('addtocart') ?>
-                        <?php if( $this->helper('wishlist')->isAllow() || $_compareUrl=$this->helper('catalog/product_compare')->getAddUrl($_product)): ?>
-                            <span class="or"><?php echo $this->__('OR') ?></span>
-                        <?php endif; ?>
-                    <?php endif; ?>
-                    <?php echo $this->getChildHtml('addto') ?>
+                <div class="info-open-box suitable-container">
+                    <span class="suitable-for">Suitable For:</span> <span class="suit-icon"></span> Home Chef <span class="suit-icon"></span> Restaurant <span class="suit-icon"></span> Professional Chef
                 </div>
-                <?php echo $this->getChildHtml('extra_buttons') ?>
-            <?php elseif (!$_product->isSaleable()): ?>
-                <div class="add-to-box">
-                    <?php echo $this->getChildHtml('addto') ?>
-                </div>
-            <?php endif; ?>
+                <div class="clearfix"></div>
+                <img src="<?php echo Mage::getDesign()->getSkinUrl(); ?>images/PrivacyGuaranteed-Banner.png" class="security-banners security-privacy" alt="Privacy Guaranteed"></img>
+                <img src="<?php echo Mage::getDesign()->getSkinUrl(); ?>images/VISA-Banner.jpg" class="security-banners" alt="Visa"></img>
+                <img src="<?php echo Mage::getDesign()->getSkinUrl(); ?>images/Mastercard-Banner.jpg" class="security-banners" alt="Master Card"></img>
+                <img src="<?php echo Mage::getDesign()->getSkinUrl(); ?>images/PayPal-Banner.jpg" class="security-banners" alt="PayPal"></img>
 
-            <?php echo $this->getChildHtml('other');?>
-
-            <?php if ($_product->isSaleable() && $this->hasOptions()):?>
-                <?php echo $this->getChildChildHtml('container1', '', true, true) ?>
-            <?php endif;?>
-            <div class="clearfix"></div>
+                <div class="share-container"><span class="share-icon"></span> SHARE <span class="share-icon-drop"></span></div>
+                <div class="clearfix"></div>
         </div>
         <div class="clearfix"></div>
-        <div class="clearer"></div>
-        <?php if ($_product->isSaleable() && $this->hasOptions()):?>
-            <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
-        <?php endif;?>
     </form>
     <script type="text/javascript">
     //<![CDATA[
@@ -203,17 +192,9 @@
     //]]>
     </script>
     </div>
-
-    <div class="product-collateral">
-<?php foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
-        <div class="box-collateral <?php echo "box-{$alias}"?>">
-            <?php if ($title = $this->getChildData($alias, 'title')):?>
-            <h2><?php echo $this->escapeHtml($title); ?></h2>
-            <?php endif;?>
-            <?php echo $html; ?>
-        </div>
-<?php endforeach;?>
-        <?php echo $this->getChildHtml('upsell_products') ?>
-        <?php echo $this->getChildHtml('product_additional_data') ?>
-    </div>
+</div>
+<div class="fixed-container">
+    <img src="<?php echo Mage::getDesign()->getSkinUrl(); ?>images/FreeGift-Banner.jpg" class="freegift-banner"></img>
+    <img src="<?php echo Mage::getDesign()->getSkinUrl(); ?>images/FreeShipping-Banner.jpg" class="freeshipping-banner"></img>
+    <div class="clearfix"></div>
 </div>

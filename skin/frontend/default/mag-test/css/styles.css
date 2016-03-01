@@ -27,6 +27,11 @@
 }
 
 @font-face {
+  font-family: Merriweather Italic;
+  src: url('../fonts/Merriweather/Merriweather-Italic.ttf');
+}
+
+@font-face {
   font-family: Merriweather;
   src: url('../fonts/Merriweather/Merriweather-Regular.ttf');
 }
@@ -656,10 +661,21 @@ body{
 }
 
 .tag-container {
+  margin-right: 5px;
+  float:left;
+}
+
+.last-tag-container {
+  float:left;
+}
+
+.outofstock-tag-container {
+  background-color: rgb(231, 76, 60);
+      width: 155px;
+
   font-size: 14px;
   font-family: "Montserrat Semi Bold";
   color: rgb(255, 255, 255);
-  margin-right: 5px;
   height: 30px;
   line-height: 30px;
   text-align: center;
@@ -667,27 +683,7 @@ body{
   float:left;
 }
 
-.currency-tag-container {
-  background-color: rgb(231, 76, 60);
-  width: 69px;
-  margin-right: 0 !important;
-}
-
-.freeshipping-tag-container {
-  background-color: rgb(20, 92, 143);
-  width: 151px;
-}
-
-.limitedlifetime-tag-container {
-  background-color: rgb(93, 110, 122);
-  width: 170px;
-}
-
-.instock-tag-container {
-  background-color: rgb(42, 145, 74);
-  width: 108px;
-}
-.rating-sku {
+.info-open-box {
   border-top: solid 3px rgb(222, 223, 225);
   border-bottom: solid 3px rgb(222, 223, 225);
   width: 508px;
@@ -857,5 +853,81 @@ body{
   background-color: rgb(67, 125, 165);
 }
 
+.suitable-for {
+  font-family: "Merriweather Italic";
+  font-size: 16px;
+      margin-right: -2px;
+      color: rgb(93, 110, 122);
+}
 
+.suitable-container span {
+  vertical-align: middle;
+}
+
+.suit-icon {
+  font-family: "Ionicons";
+  font-size: 18px;
+  margin-left:19px;
+  color: rgb(198, 204, 208);
+}
+
+.suitable-container {
+  font-family: "Merriweather Bold";
+  font-size: 14px;
+  color: rgb(93, 110, 122);
+      line-height: 49px;
+}
+
+.security-banners {
+  margin-top:23px;
+  float:left;
+  margin-left: 4px;
+}
+
+.security-privacy {
+  margin-right: 7px;
+}
+
+.share-container {
+  margin-top:23px;
+  border-width: 2px;
+  border-color: rgb(222, 223, 225);
+  border-style: solid;
+  background-color: rgb(255, 255, 255);
+  font-family: "Montserrat Semi Bold";
+  color: rgb(93, 110, 122);
+  width: 93px;
+  height: 36px;
+  float:right;
+  text-align: center;
+      line-height: 32px;
+}
+
+.share-icon-drop {
+    font-family: "Ionicons";
+    font-size: 16px;
+    color: rgb(93, 110, 122);
+}
+
+.share-icon {
+    font-family: "Ionicons";
+    font-size: 16px;
+    color: rgb(156, 172, 182);
+        vertical-align: middle;
+}
+
+.freegift-banner {
+  margin-top:22px;
+  float:left;
+}
+
+.freeshipping-banner {
+  margin-top:32px;
+  float:right;
+}
+
+.fixed-container {
+  margin:auto;
+  width: 1171px;
+}
 /* End Product View */

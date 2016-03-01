@@ -1,21 +1,23 @@
-$(document).ready(function () {
-	$('#category-dropdown').on('click', function (event) {
-	    $(this).parent().toggleClass('open');
+$.noConflict(); // jQuery is known to not work nicely with Magento
+
+jQuery(document).ready(function () {
+	jQuery('#category-dropdown').on('click', function (event) {
+	    jQuery(this).parent().toggleClass('open');
 	});
 
-	$('body').on('click', function (e) {
-	    if (!$('.dropdown').is(e.target) 
-	        && $('.dropdown').has(e.target).length === 0 
-	        && $('.open').has(e.target).length === 0
+	jQuery('body').on('click', function (e) {
+	    if (!jQuery('.dropdown').is(e.target) 
+	        && jQuery('.dropdown').has(e.target).length === 0 
+	        && jQuery('.open').has(e.target).length === 0
 	    ) {
-	        $('.dropdown').removeClass('open');
+	        jQuery('.dropdown').removeClass('open');
 	    }
 	});
 
-	$('.dropdown-column-one li').on('click', function(event) {
+	jQuery('.dropdown-column-one li').on('click', function(event) {
 		event.preventDefault();
-		$('.category-name').html($(this).find('a').html());
-		$('.dropdown-column-one li').removeClass('active');
-		$(this).addClass('active');
+		jQuery('.category-name').html(jQuery(this).find('a').html());
+		jQuery('.dropdown-column-one li').removeClass('active');
+		jQuery(this).addClass('active');
 	});
 });

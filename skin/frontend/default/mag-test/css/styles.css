@@ -42,6 +42,11 @@
 }
 
 @font-face {
+  font-family: Montserrat Bold;
+  src: url('../fonts/Montserrat/Montserrat-Bold.otf');
+}
+
+@font-face {
   font-family: Myriad Pro Regular;
   src: url('../fonts/Myriad/Myriad Pro Regular.ttf');
 }
@@ -724,8 +729,133 @@ body{
 }
 
 .short-description .std {
-    font-size: 14px;
+  font-size: 14px;
   font-family: "Merriweather";
   color: rgb(93, 110, 122);
+  line-height: 1.357;
+  width: 508px;
 }
+
+.current-price {
+    font-size: 48px;
+    line-height: 43px;
+    height: 49px;
+    font-family: "Montserrat Bold";
+    color: rgb(228, 190, 75);
+    float: left;
+    margin-top: 32px;
+}
+
+.other-prices {
+    margin:38px 26px 0px 12px;
+    float: left;
+}
+
+.msrp-price {
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "Montserrat Semi Bold";
+    color: rgb(93, 110, 122);
+    text-transform: uppercase;
+}
+
+.regular-price {
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Montserrat";
+    color: rgb(93, 110, 122);
+    text-transform: uppercase;
+    text-decoration: line-through;
+    letter-spacing: -1px;
+}
+
+.info-logo-container {
+  float:left;
+  margin-top: 40px;
+}
+
+.add-to-box {
+  float:left;
+}
+
+.add-to-cart label {
+    font-size: 16px;
+  font-family: "Merriweather Bold";
+  color: rgb(93, 110, 122);
+   text-transform: uppercase;
+  border-width: 2px;
+  border-color: rgb(222, 223, 225);
+    border-top: solid 2px rgb(222, 223, 225);
+  border-right: 0;
+  border-bottom: solid 2px rgb(222, 223, 225);
+  border-left: solid 2px rgb(222, 223, 225);
+  border-style: solid;
+    width: 78.5px;
+  height: 62px;
+  line-height: 62px;
+  text-align: center;
+  float:left;
+}
+
+.add-to-cart input {
+  background-color: rgb(245, 246, 247);
+  border-top: solid 2px rgb(222, 223, 225);
+  border-right: solid 2px rgb(222, 223, 225);
+  border-bottom: solid 2px rgb(222, 223, 225);
+  border-left: solid 2px rgb(222, 223, 225);
+    width: 80px;
+  height: 62px;
+    line-height: 62px;
+  float:left;
+    font-size: 24px;
+  font-family: "Montserrat Bold";
+  color: rgb(93, 110, 122);
+  text-align: center;
+}
+
+.add-to-cart button span span:before {
+  font-size: 24px;
+  font-family: "Ionicons";
+  color: rgb(255, 255, 255);
+  padding-right:10px;
+  content: "";
+  vertical-align: middle;
+}
+
+.add-to-cart button span span {
+  font-size: 16px;
+  font-family: "Lato Bold";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 16px;
+
+
+}
+
+.add-to-cart button {
+  margin-left:13px;
+      width: 206px;
+  height: 62px;
+    border-width: 2px;
+  border-color: rgb(20, 92, 143);
+  border-style: solid;
+  background-color: rgb(20, 92, 143);
+}
+
+.favourite-box {
+  float:left;
+    width: 60px;
+  height: 62px;
+    border-width: 2px;
+    font-size: 24px;
+    font-family: "Ionicons";
+    color: rgb(255, 255, 255);
+    line-height: 62px;
+    text-align: center;
+  border-color: rgb(67, 125, 165);
+  border-style: solid;
+  background-color: rgb(67, 125, 165);
+}
+
+
 /* End Product View */

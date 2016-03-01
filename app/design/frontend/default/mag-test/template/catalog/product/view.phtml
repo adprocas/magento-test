@@ -48,7 +48,7 @@
 
         <div class="product-img-container">
             <div class="product-img-box">
-                <img src="<?php echo Mage::getDesign()->getSkinUrl(); ?>/images/FreeGift-Tag.png" class="free-gift" alt="Free Gift With This Product - Today Only"></img>
+                <img src="<?php echo Mage::getDesign()->getSkinUrl(); ?>images/FreeGift-Tag.png" class="free-gift" alt="Free Gift With This Product - Today Only"></img>
                 <img src="<?php echo Mage::getModel('catalog/product_media_config')->getMediaUrl($_product->getImage()); ?>" alt="<?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?>">
             </div>
         </div>
@@ -75,14 +75,46 @@
                 </div>
             <?php endif;?>
 
-            <div class="pricing-container">
-                <div class="current-price"></div>
-            </div>
+
+            <?php $_msrpPrice = Mage::getModel('directory/currency')->formatTxt($_product->getMsrp(), array('display' => Zend_Currency::NO_SYMBOL)); ?>
+            <?php $_price = Mage::getModel('directory/currency')->formatTxt($_product->getPrice(), array('display' => Zend_Currency::NO_SYMBOL)); ?>
+            <?php $_specialPrice = Mage::getModel('directory/currency')->formatTxt($_product->getSpecialPrice(), array('display' => Zend_Currency::NO_SYMBOL)); ?>
+            <?php
+            $doSpecialPrice = false;
+            if($_specialPrice > 0 && $_specialPrice < $_price) {
+                $_currentPrice = $_specialPrice;
+                $doSpecialPrice = true;
+            }
+            ?>
+                <div class="current-price">$<?php echo $_currentPrice; ?></div>
+                <div class="other-prices">
+                    <div class="msrp-price">SUGG: $<?php echo $_msrpPrice; ?></div>
+                    <div class="regular-price">
+                        <?php
+                        if($doSpecialPrice === true) {
+                            echo "was " . $_price;
+                        }
+                        ?>
+                    </div>
+                </div>
+                <div class="info-logo-container">
+                    <img src="<?php echo Mage::getDesign()->getSkinUrl(); ?>images/LeCreusetLogo-Black.jpg"></img>
+                </div>
+                <div class="clearfix"></div>
 
             <?php if ($this->canEmailToFriend()): ?>
                 <p class="email-friend"><a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></p>
             <?php endif; ?>
 
+                <div class="add-to-box">
+                    <?php if($_product->isSaleable()): ?>
+                        <?php echo $this->getChildHtml('addtocart') ?>
+                    <?php endif; ?>
+                </div>
+                <div class="favourite-box">
+                    
+                </div>
+                <div class="clearfix"></div>
             <?php echo $this->getReviewsSummaryHtml($_product, false, true)?>
             <?php echo $this->getChildHtml('alert_urls') ?>
             <?php echo $this->getChildHtml('product_type_data') ?>

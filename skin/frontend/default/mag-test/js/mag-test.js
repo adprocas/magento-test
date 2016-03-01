@@ -12,7 +12,7 @@ $(document).ready(function () {
 	    }
 	});
 
-	$('.Dropdown-Column-one li').on('click', function(event) {
+	$('.dropdown-column-one li').on('click', function(event) {
 		event.preventDefault();
 		$('.category-name').html($(this).find('a').html());
 		$('.dropdown-column-one li').removeClass('active');

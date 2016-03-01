@@ -1,6 +1,51 @@
 @charset "utf-8";
 /* CSS Document */
 
+@font-face {
+    font-family: Ionicons;
+    src: url('../fonts/Ionicons/Ionicons.ttf');
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: Lato Bold;
+  src: url('../fonts/Lato/Lato-Bold.ttf');
+}
+
+@font-face {
+  font-family: Lato Bold Italic;
+  src: url('../fonts/Lato/Lato-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: Merriweather Bold;
+  src: url('../fonts/Merriweather/Merriweather-Bold.ttf');
+}
+
+@font-face {
+  font-family: Merriweather;
+  src: url('../fonts/Merriweather/Merriweather-Regular.ttf');
+}
+
+@font-face {
+  font-family: Montserrat Semi Bold;
+  src: url('../fonts/Montserrat/Montserrat-SemiBold.otf');
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat/Montserrat-Regular.otf');
+}
+
+@font-face {
+  font-family: Myriad Pro Regular;
+  src: url('../fonts/Myriad/Myriad Pro Regular.ttf');
+}
+
 body{
     margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;
     padding: 0;
@@ -82,7 +127,7 @@ body{
 
 .tagline-text {
     font-size: 16px;
-    font-family: "Lato";
+    font-family: "Lato Bold Italic";
     color: rgb(93, 110, 122);
     font-weight: bold;
     font-style: italic;
@@ -519,7 +564,7 @@ body{
   width: 100%; 
 }
 
-.Category_Name {
+.category-name {
     font-size: 18px;
   font-family: "Montserrat";
   color: rgb(38, 53, 68);
@@ -567,8 +612,8 @@ body{
 
 .product-shop {
     position: relative;
-    margin: 39px 55px 0 67px;
-    width: 507px;
+    margin: 39px 0 0 67px;
+    width: 514px;
     z-index: 273;
     float: left;
 }
@@ -581,12 +626,106 @@ body{
   left:-19px;
 }
 
+    /* Product View Right Side */
 .product-name h1 {
     font-size: 24px;
-  font-family: "Merriweather";
+  font-family: "Merriweather Bold";
   color: rgb(38, 53, 68);
-  font-weight: bold;
   line-height: 1.5;
 }
 
+
+
+.tag-icon {
+  font-size: 18px;
+  font-family: "Ionicons";
+  color: rgb(255, 255, 255);
+  vertical-align: middle;
+}
+
+.dollar-tag-icon {
+  font-size: 18px;
+  font-family: "Myriad Pro Regular";
+  color: rgb(255, 255, 255);
+  vertical-align: middle;
+}
+
+.tag-container {
+  font-size: 14px;
+  font-family: "Montserrat Semi Bold";
+  color: rgb(255, 255, 255);
+  margin-right: 5px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  float:left;
+}
+
+.currency-tag-container {
+  background-color: rgb(231, 76, 60);
+  width: 69px;
+  margin-right: 0 !important;
+}
+
+.freeshipping-tag-container {
+  background-color: rgb(20, 92, 143);
+  width: 151px;
+}
+
+.limitedlifetime-tag-container {
+  background-color: rgb(93, 110, 122);
+  width: 170px;
+}
+
+.instock-tag-container {
+  background-color: rgb(42, 145, 74);
+  width: 108px;
+}
+.rating-sku {
+  border-top: solid 3px rgb(222, 223, 225);
+  border-bottom: solid 3px rgb(222, 223, 225);
+  width: 508px;
+  height:55px;
+  margin-top:21px;
+  font-size: 14px;
+  font-family: "Merriweather Bold";
+  color: rgb(93, 110, 122);
+  line-height: 44px;
+}
+
+.unfilled-stars {
+  font-size: 20px;
+  font-family: "Ionicons";
+  color: rgb(93, 110, 122);
+  vertical-align: middle;
+}
+
+.filled-stars {
+  font-size: 20px;
+  font-family: "Ionicons";
+  color: rgb(20, 92, 143);
+  vertical-align: middle;
+}
+
+.add-review-icon {
+  font-size: 18px;
+  font-family: "Ionicons";
+}
+
+.short-description h2 {
+    font-size: 18px;
+    margin-top: 42px;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+  font-family: "Montserrat";
+  color: rgb(38, 53, 68);
+  font-weight: bold;
+}
+
+.short-description .std {
+    font-size: 14px;
+  font-family: "Merriweather";
+  color: rgb(93, 110, 122);
+}
 /* End Product View */

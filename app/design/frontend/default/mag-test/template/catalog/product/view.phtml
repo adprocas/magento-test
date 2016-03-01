@@ -57,6 +57,27 @@
             <div class="product-name">
                 <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
             </div>
+            
+            <div class="product-tags">
+                <div class="tag-container instock-tag-container"><span class="tag-icon"></span> IN STOCK</div>
+                <div class="tag-container limitedlifetime-tag-container"><span class="tag-icon"></span> limited lifetime</div>
+                <div class="tag-container freeshipping-tag-container"><span class="tag-icon"></span> free shipping</div>
+                <div class="tag-container currency-tag-container"><span class="dollar-tag-icon">$</span>CAD</div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="rating-sku">
+                <span class="filled-stars"></span><span class="unfilled-stars"></span>&nbsp;&nbsp;&nbsp;2 Review(s)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="add-review-icon"></span> Add Review&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;SKU: LEC-LS25013459
+            </div>
+            <?php if ($_product->getShortDescription()):?>
+                <div class="short-description">
+                    <h2><?php echo $this->__('Quick Overview') ?></h2>
+                    <div class="std"><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
+                </div>
+            <?php endif;?>
+
+            <div class="pricing-container">
+                <div class="current-price"></div>
+            </div>
 
             <?php if ($this->canEmailToFriend()): ?>
                 <p class="email-friend"><a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></p>
@@ -84,13 +105,6 @@
                     <?php echo $this->getChildHtml('addto') ?>
                 </div>
             <?php endif; ?>
-
-            <?php if ($_product->getShortDescription()):?>
-                <div class="short-description">
-                    <h2><?php echo $this->__('Quick Overview') ?></h2>
-                    <div class="std"><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
-                </div>
-            <?php endif;?>
 
             <?php echo $this->getChildHtml('other');?>
 

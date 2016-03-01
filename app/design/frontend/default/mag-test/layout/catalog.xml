@@ -238,6 +238,21 @@ Product view
                     <action method="append"><block>product.info.addto</block></action>
                 </block>
 
+                <block type="catalog/product_view_tabs" name="product.info.tabs" as="info_tabs" template="catalog/product/view/tabs.phtml">
+                    <action method="addTab" translate="title" module="catalog">
+                        <alias>description</alias>
+                        <title>Description</title>
+                        <block>catalog/product_view_description</block>
+                        <template>catalog/product/view/description.phtml</template>
+                    </action>
+                    <action method="addTab" translate="title" module="catalog">
+                        <alias>additional</alias>
+                        <title>Additional Information</title>
+                        <block>catalog/product_view_attributes</block>
+                        <template>catalog/product/view/attributes.phtml</template>
+                    </action>
+                </block>
+
                 <block type="core/template_facade" name="product.info.container1" as="container1">
                     <action method="setDataByKey"><key>alias_in_layout</key><value>container1</value></action>
                     <action method="setDataByKeyFromRegistry"><key>options_container</key><key_in_registry>product</key_in_registry></action>

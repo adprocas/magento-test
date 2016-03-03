@@ -30,11 +30,70 @@
 			<div class="newsletter-header">
 				signup & <span>Save $10 off</span> today’s purchase
 			</div>
+			<button type="button" title="Subscribe Now" class="button btn-newsletter"><span class="text">Signup Now</span>&nbsp;&nbsp;&nbsp;<span class="icon"></span></button>
+			<input class="newsletter-box" type="text" placeholder="Enter Your Email Address" />
 		</div>
 	</div>
-    <div class="footer">
-        <?php echo $this->getChildHtml() ?>
-        <p class="bugs"><?php echo $this->__('Help Us to Keep Magento Healthy') ?> - <a href="http://www.magentocommerce.com/bug-tracking" onclick="this.target='_blank'"><strong><?php echo $this->__('Report All Bugs') ?></strong></a> <?php echo $this->__('(ver. %s)', Mage::getVersion()) ?></p>
-        <address><?php echo $this->getCopyright() ?></address>
-    </div>
+	<div class="main-footer-container">
+		<div class="fixed-container">
+			<div class="footer-column-one">
+				<img src="<?php echo Mage::getDesign()->getSkinUrl(); ?>images/LeCreusetLogo-WhiteLrg.png"></img>
+				<div class="tagline">We are your partners in web development</div>
+				<div class="social-icons">
+					<div class="facebook"></div>
+					<div class="twitter"></div>
+					<div class="google"></div>
+					<div class="pinterest"></div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="footer-column-two">
+				<div class="footer-title">About Us</div>
+				<div class="footer-link">Our Story</div>
+				<div class="footer-link">Contact Us</div>
+				<div class="footer-link highlighted">Testimonials</div>
+				<div class="footer-link">Sitemap</div>
+			</div>
+			<div class="footer-column-three">
+				<div class="footer-title">Our Policies</div>
+				<div class="footer-link">Return Policy</div>
+				<div class="footer-link">Shipping Policy</div>
+				<div class="footer-link">Privacy Policy</div>
+				<div class="footer-link">Terms & Conditions</div>
+			</div>
+			<div class="footer-column-four">
+				<div class="footer-title">My Account</div>
+				<div class="footer-link">My Account</div>
+				<div class="footer-link">My Wishlist</div>
+				<div class="footer-link">Checkout</div>
+				<div class="footer-link">Login / Signup</div>
+			</div>
+			<div class="footer-column-five">
+				<div class="footer-title">Contact Us</div>
+				<table>
+			        <tbody>
+	                    <tr>
+			                <th class="contact-icon"></th>
+			                <td class="contact-text">123 Webdev Street,<br>London, ON N6A 5S2</td>
+			            </tr>
+	                    <tr>
+			                <th class="contact-icon"></th>
+			                <td class="contact-text"><?php echo Mage::getStoreConfig('general/store_information/phone'); ?></td>
+			            </tr>
+	                    <tr>
+			                <th class="contact-icon"></th>
+			                <td class="contact-text"><?php echo Mage::getStoreConfig('trans_email/ident_general/email'); ?></td>
+			            </tr>
+			            </tbody>
+			    </table>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="final-footer-container">
+		<div class="fixed-container">
+			<div class="footer-copyright">© Copyright 2016</div>
+		</div>
+	</div>
 </div>

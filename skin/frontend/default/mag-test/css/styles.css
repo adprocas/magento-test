@@ -989,4 +989,169 @@ body{
 .newsletter-header span {
     color: rgb(228, 190, 75);
 }
+
+.newsletter-button {
+
+}
+
+.newsletter-box {
+    width: 370px;
+    height: 65px;
+    background-color: rgb(67, 125, 165);
+    font-size: 16px;
+    font-family: "Merriweather Italic";
+    color: rgb(255, 255, 255);
+    border: none;
+    padding-left: 30px;
+    float: right;
+    position: relative;
+    top: 35px;
+}
+
+.newsletter-box::-webkit-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+.newsletter-box:-moz-placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.btn-newsletter {
+  font-size: 18px;
+  font-family: "Lato Bold";
+  text-transform: uppercase;
+  float:right;
+  color: rgb(255, 255, 255);
+  background-color: rgb(228, 190, 75);
+  width: 199px;
+  height: 65px;
+  position: relative;
+  top: 35px;
+  border: none;
+}
+.btn-newsletter span.icon {
+    font-size: 24px;
+    font-family: "Ionicons";
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+.btn-newsletter span.text {
+    display: inline-block;
+    position: relative;
+}
+
+
+.main-footer-container {
+  height: 340px;
+  background-color: rgb(38, 53, 68);
+}
+
+.main-footer-container .fixed-container {
+  padding-top:93px;
+}
+
+.main-footer-container [class*="footer-column-"] {
+  float:left;
+}
+
+.footer-column-one {
+  width: 282px;
+}
+.footer-column-two {
+  width: 196px;
+}
+.footer-column-three {
+  width: 204px;
+}
+.footer-column-four {
+  width: 198px;
+}
+.footer-column-five {
+  width: 220px;
+}
+
+.main-footer-container .tagline {
+  font-size: 14px;
+  font-family: "Merriweather Italic";
+  color: rgb(228, 190, 75);
+  margin-top: 18px;
+  padding-bottom: 17px;
+  border-bottom:solid rgb(79, 93, 103) 1px;
+  width: 267px;
+}
+
+.main-footer-container .social-icons div {
+  font-family: "Ionicons";
+  font-size: 24px;
+  float:left;
+  color: rgb(136, 156, 170);
+  line-height: 24px;
+  margin-right:17px;
+
+}
+.main-footer-container .social-icons {
+  padding-top:24px;
+}
+
+.main-footer-container .social-icons .facebook {
+  color: rgb(228, 190, 75);
+}
+
+.main-footer-container .social-icons .google {
+  margin-right:15px;
+}
+
+.main-footer-container .footer-title {
+  font-size: 18px;
+  font-family: "Montserrat Bold";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-bottom:27px;
+}
+
+
+.main-footer-container .footer-link {
+  margin-left:3px;
+  font-size: 14px;
+  font-family: "Merriweather";
+  color: rgb(136, 156, 170);
+  line-height:14px;
+  margin-bottom:20px;
+}
+
+.main-footer-container .highlighted {
+  color: rgb(228, 190, 75);
+}
+.main-footer-container .contact-text {
+  font-size: 14px;
+  font-family: "Merriweather";
+  color: rgb(136, 156, 170);
+  padding-bottom:30px;
+}
+
+.main-footer-container .contact-icon {
+  font-size: 18px;
+  font-family: "Ionicons";
+  color: rgb(228, 190, 75);
+  vertical-align: top;
+  padding-right:10px;
+}
+.main-footer-container tr {
+  line-height: 14px;
+
+}
+
+.final-footer-container {
+  background-color: rgb(31, 43, 55);
+  height: 69px;
+  width:100%;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  font-family: "Merriweather Italic";
+  color: rgb(136, 156, 170);
+  float:left;
+  line-height:69px;
+}
 /*  END FOOTER */

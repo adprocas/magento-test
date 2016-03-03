@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: Ionicons;
+    src: url('../fonts/Ionicons/Ionicons.ttf');
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: Lato Bold;
+  src: url('../fonts/Lato/Lato-Bold.ttf');
+}
+
+@font-face {
+  font-family: Lato Bold Italic;
+  src: url('../fonts/Lato/Lato-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: Merriweather Bold;
+  src: url('../fonts/Merriweather/Merriweather-Bold.ttf');
+}
+
+@font-face {
+  font-family: Merriweather Italic;
+  src: url('../fonts/Merriweather/Merriweather-Italic.ttf');
+}
+
+@font-face {
+  font-family: Merriweather;
+  src: url('../fonts/Merriweather/Merriweather-Regular.ttf');
+}
+
+@font-face {
+  font-family: Montserrat Semi Bold;
+  src: url('../fonts/Montserrat/Montserrat-SemiBold.otf');
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat/Montserrat-Regular.otf');
+}
+
+@font-face {
+  font-family: Montserrat Bold;
+  src: url('../fonts/Montserrat/Montserrat-Bold.otf');
+}
+
+@font-face {
+  font-family: Myriad Pro Regular;
+  src: url('../fonts/Myriad/Myriad Pro Regular.ttf');
+}

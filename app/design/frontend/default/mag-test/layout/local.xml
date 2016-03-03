@@ -4,6 +4,10 @@
     <reference name="head">
         <action method="addItem">
             <type>skin_css</type>
+            <file>css/fonts.css</file>
+        </action>
+        <action method="addItem">
+            <type>skin_css</type>
             <file>css/styles.css</file>
         </action>
         <action method="addItem">

@@ -1,61 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-@font-face {
-    font-family: Ionicons;
-    src: url('../fonts/Ionicons/Ionicons.ttf');
-}
-
-@font-face {
-    font-family: Lato;
-    src: url('../fonts/Lato/Lato-Regular.ttf');
-}
-
-@font-face {
-  font-family: Lato Bold;
-  src: url('../fonts/Lato/Lato-Bold.ttf');
-}
-
-@font-face {
-  font-family: Lato Bold Italic;
-  src: url('../fonts/Lato/Lato-BoldItalic.ttf');
-}
-
-@font-face {
-  font-family: Merriweather Bold;
-  src: url('../fonts/Merriweather/Merriweather-Bold.ttf');
-}
-
-@font-face {
-  font-family: Merriweather Italic;
-  src: url('../fonts/Merriweather/Merriweather-Italic.ttf');
-}
-
-@font-face {
-  font-family: Merriweather;
-  src: url('../fonts/Merriweather/Merriweather-Regular.ttf');
-}
-
-@font-face {
-  font-family: Montserrat Semi Bold;
-  src: url('../fonts/Montserrat/Montserrat-SemiBold.otf');
-}
-
-@font-face {
-  font-family: Montserrat;
-  src: url('../fonts/Montserrat/Montserrat-Regular.otf');
-}
-
-@font-face {
-  font-family: Montserrat Bold;
-  src: url('../fonts/Montserrat/Montserrat-Bold.otf');
-}
-
-@font-face {
-  font-family: Myriad Pro Regular;
-  src: url('../fonts/Myriad/Myriad Pro Regular.ttf');
-}
-
 body{
     margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;
     padding: 0;
@@ -934,12 +879,114 @@ body{
 
 
 /* Product Tabs */
-.product-tabs { margin-bottom:15px; border-bottom:1px solid #666; background:#f2f2f2 url(../images/bkg_tabs.gif) 0 100% repeat-x; height: 25px;}
-.product-tabs li { float:left; border-right:1px solid #a4a4a4; border-left:1px solid #fff; font-size:1.1em; line-height:1em; }
+.product-tabs { 
+
+  border-bottom: 3px rgb(238, 238, 239) solid;
+  width: 1171px;
+  height:50px;
+  text-transform: uppercase;
+  list-style: none;
+  margin-top: 43px;
+  height: 41px;
+      padding: 0;
+}
+.product-tabs li { 
+  float:left; 
+  font-size:1.1em; 
+  line-height:1em; 
+}
 .product-tabs li.first { border-left:0; }
 .product-tabs li.last { border-right:0; }
-.product-tabs a { display:block; padding:6px 15px; color:#444; }
-.product-tabs a:hover { background-color:#ddd; text-decoration:none; color:#444; }
+.product-tabs a { 
+  display:block; 
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: rgb(38, 53, 68);
+  margin-right: 35px;
+  padding-bottom: 23px;
+  text-decoration: none;
+}
+.product-tabs a:hover {  }
 .product-tabs li.active a,
-.product-tabs li.active a:hover { background-color:#666; font-weight:bold; color:#fff; }
+.product-tabs li.active a:hover { 
+  font-size: 24px;
+  font-family: "Montserrat Semi Bold";
+  color: rgb(38, 53, 68);
+  text-decoration: none;
+  border-bottom: 3px solid rgb(20, 92, 143);
+}
 .product-tabs-content h2 { display:none; font-size:12px; font-weight:bold; }
+
+#product-attribute-specs-table tbody tr {
+  max-width: 1171px;
+}
+
+#product-attribute-specs-table tbody .odd {
+  background-color: rgb(255, 255, 255);
+
+}
+
+#product-attribute-specs-table tbody .even {
+  background-color: rgb(245, 246, 247);
+
+}
+
+#product-attribute-specs-table .label {
+  min-width: 398px;
+  border-width: 2px;
+  border-color: rgb(222, 223, 225);
+  border-style: solid;
+  height: 62px;
+  padding:0;
+  margin:0;
+  text-align: left;
+  display: table-cell;
+  vertical-align: middle;
+
+  font-size: 16px;
+  font-family: "Merriweather Bold";
+  color: rgb(93, 110, 122);
+  padding-left:27px;
+}
+
+#product-attribute-specs-table .data {
+  
+  border-width: 2px;
+  border-color: rgb(222, 223, 225);
+  border-style: solid;
+  border-left: 0;
+  height: 62px;
+  text-align: left;
+  padding:0;
+  margin:0;
+
+  font-size: 16px;
+  font-family: "Merriweather Italic";
+  color: rgb(93, 110, 122);
+  padding-left:32px;
+}
+
+
+/*  BEGIN FOOTER */
+
+.newsletter-container {
+  background-color: rgb(20, 92, 143);
+  width: 100%;
+  height: 129px;
+}
+
+.newsletter-header {
+    font-size: 24px;
+    font-family: "Montserrat Bold";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 129px;
+    left: -23px;
+    position: relative;
+}
+
+.newsletter-header span {
+    color: rgb(228, 190, 75);
+}
+/*  END FOOTER */

@@ -112,11 +112,6 @@
                     <img src="<?php echo Mage::getDesign()->getSkinUrl(); ?>images/LeCreusetLogo-Black.jpg"></img>
                 </div>
                 <div class="clearfix"></div>
-
-            <?php if ($this->canEmailToFriend()): ?>
-                <p class="email-friend"><a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></p>
-            <?php endif; ?>
-
                 <div class="add-to-box">
                     <?php if($_product->isSaleable()): ?>
                         <?php echo $this->getChildHtml('addtocart') ?>

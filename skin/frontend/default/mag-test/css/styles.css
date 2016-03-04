@@ -236,7 +236,7 @@ body{
   font-family: "Ionicons";
   font-size: 22px;
   position: relative;
-  top: 31px;
+  top: 32px;
   color: rgb(255, 255, 255);
 }
 
@@ -890,22 +890,21 @@ body{
 }
 
 .freegift-banner {
-  margin-top: 22px;
-  float: left;
-  left: -7px;
-  position: relative;
+    margin-top: 22px;
+    float: left;
+    left: -10px;
+    position: relative;
 }
 
 .freeshipping-banner {
-  margin-top: 32px;
-  float: right;
-  position: relative;
-  right: 2px;
+    margin-top: 32px;
+    float: right;
+    position: relative;
 }
 
 .fixed-container {
   margin:auto;
-  width: 1171px;
+  width: 1167px;
 }
 /* End Product View */
 
@@ -914,7 +913,7 @@ body{
 .product-tabs { 
 
   border-bottom: 3px rgb(238, 238, 239) solid;
-  width: 1171px;
+  width: 1164px;
   height: 50px;
   text-transform: uppercase;
   list-style: none;
@@ -952,7 +951,7 @@ body{
 }
 
 #product-attribute-specs-table tbody tr {
-  max-width: 1171px;
+  max-width: 1165px;
 }
 
 #product-attribute-specs-table tbody .odd {

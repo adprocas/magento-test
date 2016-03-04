@@ -85,8 +85,6 @@ body{
     font-family: "Lato Bold Italic";
     color: rgb(93, 110, 122);
     font-weight: bold;
-    font-style: italic;
-    line-height: 1.188;
     text-align: left;
     position: absolute;
     bottom: 29px;
@@ -109,29 +107,56 @@ body{
 
 .account-info-container {
     font-size: 14px;
+    font-family: "Lato Bold";
     line-height: 1.056;
     z-index: 305;
     display: inline-block;
     position: relative;
     bottom: -17px;
+    color: rgb(93, 110, 122);
 }
 
-.wishlist-container {
+.account-info-container a, .account-info-container a:hover, .account-info-container a:active, .account-info-container a:focus, .account-info-container a:link, .account-info-container a:visited  {
+  text-decoration: none;
   font-size: 14px;
+  font-family: "Lato Bold";
+  color: rgb(93, 110, 122);
+}
+
+
+.wishlist-container {
   color: rgb(20, 92, 143);
   line-height: 1.056;
   z-index: 305;
   display:inline-block;
 }
 
-.account-icon {
+.account-info-container .wish-icon {
   font-family: "Ionicons";
   font-size: 18px;
   display:inline-block;  
+  vertical-align: middle;
+  color: rgb(20, 92, 143);
+}
+
+.account-info-container .account-icon {
   font-family: "Ionicons";
-    font-size: 18px;
-    display: inline-block;
-    vertical-align: middle;
+  font-size: 20px;
+  display:inline-block;  
+  vertical-align: middle;
+  color: rgb(198, 204, 208);
+}
+
+.account-info-container .login-icon {
+  font-family: "Ionicons";
+  font-size: 16px;
+  display:inline-block;  
+  vertical-align: middle;
+  color: rgb(198, 204, 208);
+}
+
+.account-info-container .pipe {
+  color: rgb(177, 185, 191);
 }
 /* End Header area */
 
@@ -208,16 +233,20 @@ body{
 }
 
 .category-nav-icon {
+    font-family: "Ionicons";
+    font-size: 22px;
     position: relative;
-    top: 29px;
+    top: 31px;
     color: rgb(255, 255, 255);
 }
 
 .category-menu-text {
-  font-size: 18px;
-  font-family: "Lato Black";  
-      font-weight: bold;
+    font-size: 18px;
+    font-family: "Lato Black";
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
+    top: 30px;
+    position: relative;
 }
       /*End Categories Menu*/
       /*Regular Menu*/
@@ -270,7 +299,7 @@ body{
 
 .brands-item span, .menu-item span {
   font-size: 16px;
-  font-family: "Lato";
+  font-family: "Lato Bold";
 }
       /*End Regular Menu*/
       /* Right hand menu */
@@ -862,8 +891,10 @@ body{
 }
 
 .freegift-banner {
-  margin-top:22px;
-  float:left;
+    margin-top: 22px;
+    float: left;
+    left: -7px;
+    position: relative;
 }
 
 .freeshipping-banner {
@@ -968,6 +999,10 @@ body{
 
 
 /*  BEGIN FOOTER */
+
+.footer-container {
+  margin-top:48px;
+}
 
 .newsletter-container {
   background-color: rgb(20, 92, 143);
@@ -1153,5 +1188,25 @@ body{
   color: rgb(136, 156, 170);
   float:left;
   line-height:69px;
+}
+
+.final-footer-icons {
+    float: right;
+    height: 69px;
+    font-size: 0px;
+}
+
+.final-footer-icons img {
+  margin-left:4px;
+}
+
+.final-footer-icons .mastercard {
+  margin-left:8px;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 /*  END FOOTER */
